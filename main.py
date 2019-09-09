@@ -23,7 +23,8 @@ querystring = {
 
 
 def get_config():
-    with open('config.json') as f:
+    with open('../config.json') as f:
+        print(f)
         parameters = json.load(f)['parameters']['env']
 
     AUTH_EVENTBRITE = parameters["#AUTH_EVENTBRITE"]
@@ -115,8 +116,6 @@ def main():
     
     events = get_events(org_id=ORG_ID, headers=HEADERS, exclude=["53765820015"], base_url=BASE_URL, querystring=querystring)
     slack_data = template.render(events=events, flags=FLAGS)
-
-
     send_slack(webhook_url, json.loads(slack_data))
 
 
