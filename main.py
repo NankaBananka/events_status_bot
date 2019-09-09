@@ -25,10 +25,7 @@ querystring = {
 def get_config():
     with open('/data/config.json') as f:
         print("getting parameters")
-#        print(json.load(f))
-#        print(json.dumps(json.load(f)['parameters']))
         parameters = json.load(f)['parameters']
-        print(parameters)
 
     AUTH_EVENTBRITE = parameters['env']['#AUTH_EVENTBRITE']
     ORG_ID = parameters['env']['ORG_ID']
