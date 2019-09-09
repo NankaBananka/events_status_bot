@@ -25,14 +25,16 @@ querystring = {
 def get_config():
     with open('/data/config.json') as f:
         print(json.dumps(json.load(f)))
-        parameters = json.load(f)['parameters']['env']
+        parameters = json.load(f)["parameters"]
+        print(parameters)
 
-    AUTH_EVENTBRITE = parameters["#AUTH_EVENTBRITE"]
-    ORG_ID = parameters["ORG_ID"]
-    WEBHOOK_URL = parameters["#SLACK_WEBHOOK"]
-    BASE_URL = parameters["BASE_URL"]
+    AUTH_EVENTBRITE = parameters['env']["#AUTH_EVENTBRITE"]
+    ORG_ID = parameters['env']["ORG_ID"]
+    WEBHOOK_URL = parameters['env']["#SLACK_WEBHOOK"]
+    BASE_URL = parameters['env']["BASE_URL"]
     HEADERS = {'Authorization': "Bearer " + AUTH_EVENTBRITE}
 
+    print(ORG_ID, WEBHOOK_URL, BASE_URL, HEADERS)
     return ORG_ID, WEBHOOK_URL, BASE_URL, HEADERS
 
 
