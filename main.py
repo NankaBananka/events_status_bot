@@ -23,7 +23,7 @@ querystring = {
 
 
 def get_config():
-    with open('../config.json') as f:
+    with open('/data/config.json') as f:
         print(json.dumps(json.load(f)))
         print(json.dumps(json.load(f)["parameters"]))
         parameters = json.load(f)["parameters"]
