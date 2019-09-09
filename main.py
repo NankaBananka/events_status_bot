@@ -23,8 +23,8 @@ querystring = {
 
 
 def get_config():
-    with open('../config.json') as f:
-        print(f)
+    with open('/data/config.json') as f:
+        print(json.dumps(json.loads(f)))
         parameters = json.load(f)['parameters']['env']
 
     AUTH_EVENTBRITE = parameters["#AUTH_EVENTBRITE"]
