@@ -1,0 +1,26 @@
+{
+	"blocks":[
+	{
+		"type": "section",
+		"text": {
+			"type": "mrkdwn",
+			"text": "Hey there! I'm a new bot and I'll let you know the upcoming events' regustration status daily. Please remember that I'm still very young and need to learn, if you have any ideas how to improve me - let know @Nelya_OPS_SG!\n\nCheck upcoming events' *registration status*:"
+		}
+	},
+	{
+		"type": "divider"
+	},
+	{% for event in events -%}
+	{
+		"type": "section",
+		"text": {
+			"type": "mrkdwn",
+			"text": " *{{ event.name }}* \nin {{ event.timezone }} {{ flags[event.timezone ]}} \n\t :calendar: starts _{{ event.starts }}_\t ends _{{ event.ends }}_ \n\n\t*REGISTERED*{% for ticket in event.tickets -%}\n\t*{{ticket.name}}*: {{ticket.sold}} out of {{ticket.total}}, seats avilable:{{ticket.available}}{% endfor %}" 
+		}
+	},
+	{% endfor %}
+		{
+		"type": "divider"
+	}
+]
+}
