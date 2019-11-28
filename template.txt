@@ -4,7 +4,7 @@
 		"type": "section",
 		"text": {
 			"type": "mrkdwn",
-			"text": "Hey there! I'm a new bot and I'll let you know the upcoming events' regustration status daily. Please remember that I'm still very young and need to learn, if you have any ideas how to improve me - let know @Nelya_OPS_SG! I'm scheduled to give you info on Mondays and Thursdays 9AM Singapore time :)\n\nCheck upcoming events' *registration status*:"
+			"text": "Hey there! I'm a new bot and I'll let you know the upcoming events' regustration status daily. Please remember that I'm still very young and need to learn, if you have any ideas how to improve me - let know @Nelya_OPS_SG! I'm scheduled to give you info on Mondays, Wednesdays and Fridays 9AM Singapore time :)\n\nCheck upcoming events' *registration status*:"
 		}
 	},
 	{
