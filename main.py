@@ -6,11 +6,13 @@ import os
 FLAGS = {
     "Asia/Singapore": ":flag-sg:",
     "Asia/Hong_Kong": ":flag-hk:",
-    "Asia/Jakarta": ":flag:id:",
+    "Asia/Jakarta": ":flag-id:",
     "America/Los_Angeles": ":flag-us:",
     "Asia/Manila": ":flag-ph:",
-    "Australia/Melbourne": ":flag:au:",
-    "Australia/Sydney": ":flag:au"
+    "Australia/Melbourne": ":flag-au:",
+    "Australia/Sydney": ":flag-au",
+    "Cambodia/Phnom_Penh": ":flag-kh",
+    "Cambodia/Siem_Rip": ":flag-kh"
 }
 
 
