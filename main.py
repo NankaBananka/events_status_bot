@@ -10,9 +10,9 @@ FLAGS = {
     "America/Los_Angeles": ":flag-us:",
     "Asia/Manila": ":flag-ph:",
     "Australia/Melbourne": ":flag-au:",
-    "Australia/Sydney": ":flag-au",
-    "Cambodia/Phnom_Penh": ":flag-kh",
-    "Cambodia/Siem_Rip": ":flag-kh"
+    "Australia/Sydney": ":flag-au:",
+    "Cambodia/Phnom_Penh": ":flag-kh:",
+    "Cambodia/Siem_Rip": ":flag-kh:"
 }
 
 
